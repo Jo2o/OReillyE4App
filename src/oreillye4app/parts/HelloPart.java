@@ -34,9 +34,9 @@ public class HelloPart {
     @PostConstruct
     public void create(Composite parent) {
         createLabel(parent);
-        log.error("Label created...");
+        log.info("Label created...");
         createButton(parent);
-        log.error("Button created...");
+        log.info("Button created...");
     }
 
     @Focus
