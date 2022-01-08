@@ -13,7 +13,9 @@
         <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLi8gZEeSyMNYR5xypkQ" elementId="OreillyE4App.handleditem.file.open" label="Open" iconURI="platform:/plugin/OreillyE4App/icons/open_in_app.png" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLjMgZEeSyMNYR5xypkQ" elementId="OreillyE4App.handleditem.save" label="Save" iconURI="platform:/plugin/OreillyE4App/icons/save_edit.png" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLjcgZEeSyMNYR5xypkQ" elementId="OreillyE4App.handleditem.quit" label="Quit" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
-        <children xsi:type="menu:HandledMenuItem" xmi:id="_fnWp0HDYEeyuTNV8u6WacQ" elementId="oreillye4app.handledmenuitem.hello" label="Hello" tooltip="Logs Hello" command="_316VAHDXEeyuTNV8u6WacQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_fnWp0HDYEeyuTNV8u6WacQ" elementId="oreillye4app.handledmenuitem.hello" label="Hello" tooltip="Logs Hello" command="_316VAHDXEeyuTNV8u6WacQ">
+          <parameters xmi:id="_Mu-uQHDbEeyuTNV8u6WacQ" elementId="oreillye4app.parameter.hellovalue" name="oreillye4app.commandparameter.hellovalue" value="ValueInHandledMenuItem-777"/>
+        </children>
       </children>
       <children xsi:type="menu:Menu" xmi:id="_6wlLjsgZEeSyMNYR5xypkQ" elementId="help" label="Help">
         <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLj8gZEeSyMNYR5xypkQ" elementId="OreillyE4App.handleditem.about" label="About" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
@@ -68,7 +70,9 @@
   <commands xmi:id="_6wlLgMgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.open" commandName="openCommand"/>
   <commands xmi:id="_6wlLg8gZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
   <commands xmi:id="_6wlLhsgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
-  <commands xmi:id="_316VAHDXEeyuTNV8u6WacQ" elementId="oreillye4app.command.hellocommand" commandName="helloCommand" description="Says Hello"/>
+  <commands xmi:id="_316VAHDXEeyuTNV8u6WacQ" elementId="oreillye4app.command.hellocommand" commandName="helloCommand" description="Says Hello">
+    <parameters xmi:id="_X0b_wHDbEeyuTNV8u6WacQ" elementId="oreillye4app.commandparameter.hellovalue" name="hello.value"/>
+  </commands>
   <addons xmi:id="_6wlLcsgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_6wlLc8gZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_6wlLdMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
