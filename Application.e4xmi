@@ -3,7 +3,8 @@
   <children xsi:type="basic:TrimmedWindow" xmi:id="_6wlLccgZEeSyMNYR5xypkQ" elementId="OreillyE4App.window.main" label="Eclipse RCP Application" width="500" height="400">
     <children xsi:type="basic:PartSashContainer" xmi:id="_6wlLksgZEeSyMNYR5xypkQ" elementId="OreillyE4App.partsashcontainer.sample">
       <children xsi:type="basic:PartStack" xmi:id="_6wlLk8gZEeSyMNYR5xypkQ" elementId="OreillyE4App.partstack.sample">
-        <children xsi:type="basic:Part" xmi:id="_6wlLlMgZEeSyMNYR5xypkQ" elementId="OreillyE4App.part.sample" contributionURI="bundleclass://OreillyE4App/oreillye4app.parts.SamplePart" iconURI="platform:/plugin/OreillyE4App/icons/home.png" label="Sample Part"/>
+        <children xsi:type="basic:Part" xmi:id="_6wlLlMgZEeSyMNYR5xypkQ" elementId="OreillyE4App.part.sample" contributionURI="bundleclass://OreillyE4App/oreillye4app.parts.SamplePart" label="Sample Part" iconURI="platform:/plugin/OreillyE4App/icons/home.png"/>
+        <children xsi:type="basic:Part" xmi:id="_LkrZ8HC9Eeypy5t4P05UrQ" elementId="oreillye4app.part.hello" contributionURI="bundleclass://OreillyE4App/oreillye4app.parts.HelloPart" label="Hello"/>
       </children>
     </children>
     <mainMenu xmi:id="_6wlLicgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.main.menu">
