@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_6wlLcMgZEeSyMNYR5xypkQ" elementId="OreillyE4App.application" bindingContexts="_6wlLecgZEeSyMNYR5xypkQ">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_6wlLccgZEeSyMNYR5xypkQ" elementId="OreillyE4App.window.main" label="Eclipse RCP Application" width="500" height="400">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_6wlLccgZEeSyMNYR5xypkQ" elementId="OreillyE4App.window.main" label="Hello E4" width="500" height="400">
     <children xsi:type="basic:PartSashContainer" xmi:id="_6wlLksgZEeSyMNYR5xypkQ" elementId="OreillyE4App.partsashcontainer.sample">
       <children xsi:type="basic:PartStack" xmi:id="_6wlLk8gZEeSyMNYR5xypkQ" elementId="OreillyE4App.partstack.sample">
         <children xsi:type="basic:Part" xmi:id="_6wlLlMgZEeSyMNYR5xypkQ" elementId="OreillyE4App.part.sample" contributionURI="bundleclass://OreillyE4App/oreillye4app.parts.SamplePart" label="Sample Part" iconURI="platform:/plugin/OreillyE4App/icons/home.png"/>
@@ -21,6 +21,29 @@
       <children xsi:type="menu:ToolBar" xmi:id="_6wlLlsgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.main.toolbar">
         <children xsi:type="menu:HandledToolItem" xmi:id="_6wlLmMgZEeSyMNYR5xypkQ" elementId="OreillyE4App.handleditem.trimbar.top.save" iconURI="platform:/plugin/OreillyE4App/icons/save_edit.png" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
         <children xsi:type="menu:HandledToolItem" xmi:id="_6wlLl8gZEeSyMNYR5xypkQ" elementId="OreillyE4App.handleditem.trimbar.top.open" iconURI="platform:/plugin/OreillyE4App/icons/open_in_app.png" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
+      </children>
+    </trimBars>
+  </children>
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_D8gw4HDMEeyuTNV8u6WacQ" elementId="OreillyE4App.window.main" label="Other E4" width="500" height="400">
+    <children xsi:type="basic:PartSashContainer" xmi:id="_D8gw4XDMEeyuTNV8u6WacQ" elementId="OreillyE4App.partsashcontainer.sample">
+      <children xsi:type="basic:PartStack" xmi:id="_D8gw4nDMEeyuTNV8u6WacQ" elementId="OreillyE4App.partstack.sample">
+        <children xsi:type="basic:Part" xmi:id="_D8gw5HDMEeyuTNV8u6WacQ" elementId="oreillye4app.part.hello" contributionURI="bundleclass://OreillyE4App/oreillye4app.parts.HelloPart" label="Hello"/>
+      </children>
+    </children>
+    <mainMenu xmi:id="_D8gw5XDMEeyuTNV8u6WacQ" elementId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_D8gw5nDMEeyuTNV8u6WacQ" elementId="file" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_D8gw53DMEeyuTNV8u6WacQ" elementId="OreillyE4App.handleditem.file.open" label="Open" iconURI="platform:/plugin/OreillyE4App/icons/open_in_app.png" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_D8gw6HDMEeyuTNV8u6WacQ" elementId="OreillyE4App.handleditem.save" label="Save" iconURI="platform:/plugin/OreillyE4App/icons/save_edit.png" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_D8gw6XDMEeyuTNV8u6WacQ" elementId="OreillyE4App.handleditem.quit" label="Quit" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_D8gw6nDMEeyuTNV8u6WacQ" elementId="help" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_D8gw63DMEeyuTNV8u6WacQ" elementId="OreillyE4App.handleditem.about" label="About" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_D8gw7HDMEeyuTNV8u6WacQ" elementId="OreillyE4App.trimbar.top">
+      <children xsi:type="menu:ToolBar" xmi:id="_D8gw7XDMEeyuTNV8u6WacQ" elementId="org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_D8gw7nDMEeyuTNV8u6WacQ" elementId="OreillyE4App.handleditem.trimbar.top.save" iconURI="platform:/plugin/OreillyE4App/icons/save_edit.png" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_D8gw73DMEeyuTNV8u6WacQ" elementId="OreillyE4App.handleditem.trimbar.top.open" iconURI="platform:/plugin/OreillyE4App/icons/open_in_app.png" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
       </children>
     </trimBars>
   </children>
