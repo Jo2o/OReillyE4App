@@ -11,6 +11,7 @@ import org.eclipse.e4.ui.di.Focus;
 import org.eclipse.e4.ui.di.UIEventTopic;
 import org.eclipse.e4.ui.di.UISynchronize;
 import org.eclipse.e4.ui.model.application.ui.basic.MWindow;
+import org.eclipse.e4.ui.services.EMenuService;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
@@ -32,7 +33,8 @@ public class HelloPart {
     private Button button;
 
     @PostConstruct
-    public void create(Composite parent) {
+    public void create(Composite parent, EMenuService menuService) {
+        registerPopupMenu(parent, menuService);
         createLabel(parent);
         log.info("Label created...");
         createButton(parent);
@@ -74,12 +76,20 @@ public class HelloPart {
                     }
                 }
                 .schedule(3000);
-
             }
+
             @Override
             public void widgetDefaultSelected(SelectionEvent event) {
             }
         });
+    }
+
+    private void registerPopupMenu(Composite parent, EMenuService menuService) {
+        if (!menuService.registerContextMenu(parent, "oreillye4app.popupmenu.hello123")) {
+            log.error("Failed to register PopupMenu!");
+        } else {
+            log.info("Successfully registered PopupMenu :)");
+        }
     }
 
     // @Inject

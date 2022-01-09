@@ -4,7 +4,15 @@
     <children xsi:type="basic:PartSashContainer" xmi:id="_6wlLksgZEeSyMNYR5xypkQ" elementId="OreillyE4App.partsashcontainer.sample">
       <children xsi:type="basic:PartStack" xmi:id="_6wlLk8gZEeSyMNYR5xypkQ" elementId="OreillyE4App.partstack.sample">
         <children xsi:type="basic:Part" xmi:id="_6wlLlMgZEeSyMNYR5xypkQ" elementId="OreillyE4App.part.sample" contributionURI="bundleclass://OreillyE4App/oreillye4app.parts.SamplePart" label="Sample Part" iconURI="platform:/plugin/OreillyE4App/icons/home.png"/>
-        <children xsi:type="basic:Part" xmi:id="_LkrZ8HC9Eeypy5t4P05UrQ" elementId="oreillye4app.part.hello" contributionURI="bundleclass://OreillyE4App/oreillye4app.parts.HelloPart" label="Hello"/>
+        <children xsi:type="basic:Part" xmi:id="_LkrZ8HC9Eeypy5t4P05UrQ" elementId="oreillye4app.part.hello" contributionURI="bundleclass://OreillyE4App/oreillye4app.parts.HelloPart" label="Hello">
+          <menus xsi:type="menu:PopupMenu" xmi:id="_ksOtYHDiEeyXPoDmuiVQmg" elementId="oreillye4app.popupmenu.hello123" label="Hello">
+            <children xsi:type="menu:HandledMenuItem" xmi:id="_qHXgYHDiEeyXPoDmuiVQmg" elementId="oreillye4app.handledmenuitem.hello" label="Hello" command="_316VAHDXEeyuTNV8u6WacQ"/>
+          </menus>
+          <menus xmi:id="_zFIFkHDiEeyXPoDmuiVQmg" elementId="oreillye4app.menu.0">
+            <tags>ViewMenu</tags>
+            <children xsi:type="menu:HandledMenuItem" xmi:id="_0qdrsHDiEeyXPoDmuiVQmg" elementId="oreillye4app.handledmenuitem.hello" label="Hello" command="_316VAHDXEeyuTNV8u6WacQ"/>
+          </menus>
+        </children>
         <children xsi:type="basic:Part" xmi:id="_L-NrkHDOEeyuTNV8u6WacQ" elementId="oreillye4app.part.rainbow" contributionURI="bundleclass://OreillyE4App/oreillye4app.parts.RainbowPart" label="Rainbow"/>
       </children>
     </children>
@@ -13,9 +21,10 @@
         <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLi8gZEeSyMNYR5xypkQ" elementId="OreillyE4App.handleditem.file.open" label="Open" iconURI="platform:/plugin/OreillyE4App/icons/open_in_app.png" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLjMgZEeSyMNYR5xypkQ" elementId="OreillyE4App.handleditem.save" label="Save" iconURI="platform:/plugin/OreillyE4App/icons/save_edit.png" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLjcgZEeSyMNYR5xypkQ" elementId="OreillyE4App.handleditem.quit" label="Quit" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
-        <children xsi:type="menu:HandledMenuItem" xmi:id="_fnWp0HDYEeyuTNV8u6WacQ" elementId="oreillye4app.handledmenuitem.hello" label="Hello" tooltip="Logs Hello" command="_316VAHDXEeyuTNV8u6WacQ">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_fnWp0HDYEeyuTNV8u6WacQ" elementId="oreillye4app.handledmenuitem.hello" label="HandledHello" tooltip="Logs Hello" command="_316VAHDXEeyuTNV8u6WacQ">
           <parameters xmi:id="_Mu-uQHDbEeyuTNV8u6WacQ" elementId="oreillye4app.parameter.hellovalue" name="oreillye4app.commandparameter.hellovalue" value="ValueInHandledMenuItem-777"/>
         </children>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_iOl4MHDgEeyXPoDmuiVQmg" elementId="oreillye4app.directmenuitem.directhello" label="DirectHello" contributionURI="bundleclass://OreillyE4App/oreillye4app.handlers.HelloHandler"/>
       </children>
       <children xsi:type="menu:Menu" xmi:id="_6wlLjsgZEeSyMNYR5xypkQ" elementId="help" label="Help">
         <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLj8gZEeSyMNYR5xypkQ" elementId="OreillyE4App.handleditem.about" label="About" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
@@ -61,6 +70,7 @@
     <bindings xmi:id="_6wlLgsgZEeSyMNYR5xypkQ" elementId="OreillyE4App.keybinding.m1o" keySequence="M1+O" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
     <bindings xmi:id="_6wlLhcgZEeSyMNYR5xypkQ" elementId="OreillyE4App.keybinding.m1s" keySequence="M1+S" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
     <bindings xmi:id="_6wlLiMgZEeSyMNYR5xypkQ" elementId="OreillyE4App.keybinding.m1a" keySequence="M1+A" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
+    <bindings xmi:id="_4Q7uAHDgEeyXPoDmuiVQmg" elementId="oreillye4app.keybinding.m1l" keySequence="M1+L" command="_316VAHDXEeyuTNV8u6WacQ"/>
   </bindingTables>
   <rootContext xmi:id="_6wlLecgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
     <children xmi:id="_6wlLesgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
